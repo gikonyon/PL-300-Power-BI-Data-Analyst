@@ -1,5 +1,5 @@
 {
-  "project": "AI Bubble vs Supercycle Analysis & Labor Impact",
+  "project": "AI CapEx Investment vs. Regional Labor Restructuring",
   "dataset_version": "2.0",
   "metrics": [
     {
@@ -27,7 +27,7 @@
       "capex_billions": 30.9,
       "revenue_billions": 61.9,
       "net_income_billions": 21.9,
-      "regional_labor_impact": "Global restructuring; Nairobi ADC engineering wind-down affecting local high-value roles"
+      "regional_labor_impact": "Global restructuring; Nairobi ADC engineering hub wind-down impacting senior technical roles"
     },
     {
       "quarter": "Q2 2026",
@@ -36,7 +36,7 @@
       "capex_billions": 35.8,
       "revenue_billions": 64.7,
       "net_income_billions": 22.0,
-      "regional_labor_impact": "Shift toward core cloud and consolidated regional infrastructure engineering"
+      "regional_labor_impact": "Consolidation toward core cloud and global infrastructure teams"
     },
     {
       "quarter": "Q1 2026",
@@ -45,7 +45,7 @@
       "capex_billions": 19.8,
       "revenue_billions": 36.5,
       "net_income_billions": 12.3,
-      "regional_labor_impact": "Redundancies at Nairobi digital services following transition to automated internal AI moderation"
+      "regional_labor_impact": "Redundancies affecting 1,100+ Nairobi staff following transition to internal automated AI moderation"
     },
     {
       "quarter": "Q2 2026",
@@ -54,7 +54,7 @@
       "capex_billions": 31.1,
       "revenue_billions": 39.1,
       "net_income_billions": 13.5,
-      "regional_labor_impact": "Complete displacement of human-in-the-loop content moderation by proprietary generative models"
+      "regional_labor_impact": "Complete displacement of human-in-the-loop content moderation by generative models"
     }
   ]
 }
