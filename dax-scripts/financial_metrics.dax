@@ -1,0 +1,26 @@
+// ===================================================
+// PL-300 Portfolio: DAX Measures for AI & Labor Analysis
+// ===================================================
+
+// 1. Total Infrastructure CapEx Outlay ($B)
+Total CapEx = SUM(Fact_Financials[CapEx_Billions])
+
+// 2. Total Net Income ($B)
+Total Net Income = SUM(Fact_Financials[Net_Income_Billions])
+
+// 3. CapEx-to-Net-Income Ratio (%)
+// Evaluates infrastructure investment intensity relative to bottom-line profitability
+CapEx Investment Intensity = 
+DIVIDE(
+    [Total CapEx], 
+    [Total Net Income], 
+    0
+)
+
+// 4. Labor Impact Tooltip Measure
+// Captures qualitative workforce commentary directly inside report visuals
+Labor Impact Context = 
+SELECTEDVALUE(
+    Fact_Financials[Regional_Labor_Impact], 
+    "Multiple operational adjustments across global and regional talent hubs."
+)
