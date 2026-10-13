@@ -49,3 +49,27 @@ let
     })
 in
     #"Changed Type"
+# Domain 1: Prepare the Data (PL-300 Ingestion Pipeline)
+
+To ingest `datasets/ai_market_data.json` directly from GitHub into Power Query, use the following M code script:
+
+```powerquery
+let
+    Source = Json.Document(Web.Contents("[https://raw.githubusercontent.com/gikonyon/PL-300-Power-BI-Data-Analyst/main/datasets/ai_market_data.json](https://raw.githubusercontent.com/gikonyon/PL-300-Power-BI-Data-Analyst/main/datasets/ai_market_data.json)")),
+    metrics_List = Source[metrics],
+    #"Converted to Table" = Table.FromList(metrics_List, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Expanded Column1" = Table.ExpandRecordColumn(#"Converted to Table", "Column1", 
+        {"quarter", "company", "category", "capex_billions", "revenue_billions", "net_income_billions", "regional_labor_impact"}, 
+        {"Quarter", "Company", "Category", "CapEx_Billions", "Revenue_Billions", "Net_Income_Billions", "Regional_Labor_Impact"}
+    ),
+    #"Changed Type" = Table.TransformColumnTypes(#"Expanded Column1",{
+        {"Quarter", type text}, 
+        {"Company", type text}, 
+        {"Category", type text}, 
+        {"CapEx_Billions", Currency.Type}, 
+        {"Revenue_Billions", Currency.Type}, 
+        {"Net_Income_Billions", Currency.Type}, 
+        {"Regional_Labor_Impact", type text}
+    })
+in
+    #"Changed Type"
