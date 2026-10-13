@@ -1,0 +1,60 @@
+{
+  "project": "AI Bubble vs Supercycle Analysis & Labor Impact",
+  "dataset_version": "2.0",
+  "metrics": [
+    {
+      "quarter": "Q1 2025",
+      "company": "NVIDIA",
+      "category": "Hardware Supplier",
+      "capex_billions": 2.5,
+      "revenue_billions": 26.0,
+      "net_income_billions": 14.8,
+      "regional_labor_impact": "Expansion of hardware supply chain and chip architecture roles"
+    },
+    {
+      "quarter": "Q2 2025",
+      "company": "NVIDIA",
+      "category": "Hardware Supplier",
+      "capex_billions": 3.0,
+      "revenue_billions": 30.0,
+      "net_income_billions": 16.6,
+      "regional_labor_impact": "High demand for specialized AI chip integration engineers"
+    },
+    {
+      "quarter": "Q1 2026",
+      "company": "Microsoft",
+      "category": "Hyperscaler",
+      "capex_billions": 30.9,
+      "revenue_billions": 61.9,
+      "net_income_billions": 21.9,
+      "regional_labor_impact": "Global restructuring; Nairobi ADC engineering wind-down affecting local high-value roles"
+    },
+    {
+      "quarter": "Q2 2026",
+      "company": "Microsoft",
+      "category": "Hyperscaler",
+      "capex_billions": 35.8,
+      "revenue_billions": 64.7,
+      "net_income_billions": 22.0,
+      "regional_labor_impact": "Shift toward core cloud and consolidated regional infrastructure engineering"
+    },
+    {
+      "quarter": "Q1 2026",
+      "company": "Meta / Sama",
+      "category": "Outsourced AI Partner",
+      "capex_billions": 19.8,
+      "revenue_billions": 36.5,
+      "net_income_billions": 12.3,
+      "regional_labor_impact": "Redundancies at Nairobi digital services following transition to automated internal AI moderation"
+    },
+    {
+      "quarter": "Q2 2026",
+      "company": "Meta / Sama",
+      "category": "Outsourced AI Partner",
+      "capex_billions": 31.1,
+      "revenue_billions": 39.1,
+      "net_income_billions": 13.5,
+      "regional_labor_impact": "Complete displacement of human-in-the-loop content moderation by proprietary generative models"
+    }
+  ]
+}
